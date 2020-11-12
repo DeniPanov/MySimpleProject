@@ -2,6 +2,9 @@
 
 :root {
     --primary-color: #047aed;
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
 }
 
 * {
@@ -113,54 +116,78 @@ img {
     outline: none;
 }
 
-/* Utilities */
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    overflow: auto;
-    padding: 0 40px;
+.showcase::before,
+.showcase::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background: #fff;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
 }
 
-.card {
-    background-color: #fff;
-    color: #333;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-    padding: 20px;
-    margin: 10px;
+/* Stats */
+
+.stats {
+    padding-top: 100px;
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 30px;
-    cursor: pointer;
-    background: var(--primary-color);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
+.stats-heading {
+    max-width: 500px;
+    margin: auto;
 }
 
-.btn:hover {
-    transform: scale(0.98);
+.stats .grid h3 {
+    font-size: 35px;
 }
 
-.btn-outline {
-    background-color: transparent;
-    border: 1px #fff solid;
+.stats .grid p {
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+/* Cli */
+.cli .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+.cli .grid > *:first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+/* Cloud */
+.cloud .grid {
+    grid-template-columns: 4fr 3fr;
+}
+
+/* Languages */
+.languages .flex {
+    flex-wrap: wrap;
+}
+
+.languages .card{
+    text-align: center;
+    margin: 18px 10px 40 px;
+    transition: transform 0.2s ease-in;
+}
+
+.languages .card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.languages .card:hover {
+    transform: translateY(-15px);
+}
+
+/* Footer */
+.footer .social a{
+    margin: 0 10px;
 }
