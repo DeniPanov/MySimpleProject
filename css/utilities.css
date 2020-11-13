@@ -9,7 +9,7 @@
     background-color: #fff;
     color: #333;
     border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
     margin: 10px;
 }
@@ -33,35 +33,47 @@
     border: 1px #fff solid;
 }
 
+
 /* Backgrounds and colored buttons */
-.bg-primary, .btn-primary {
+
+.bg-primary,
+.btn-primary {
     background-color: var(--primary-color);
     color: #fff
 }
 
-.bg-secondary, .btn-secondary {
+.bg-secondary,
+.btn-secondary {
     background-color: var(--secondary-color);
     color: #fff
 }
 
-.bg-dark, .btn-dark {
+.bg-dark,
+.btn-dark {
     background-color: var(--dark-color);
     color: #fff
 }
 
-.bg-light, .btn-light {
+.bg-light,
+.btn-light {
     background-color: var(--light-color);
     color: #333
 }
 
-.bg-primary a, .btn-primary a,
-.bg-secondary a, .btn-secondary a,
-.bg-dark a, .btn-dark a,
-.bg-light a, .btn-light a {
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a,
+.bg-light a,
+.btn-light a {
     color: #fff
 }
 
+
 /* Text sizes */
+
 .lead {
     font-size: 20px;
 }
@@ -104,10 +116,11 @@
 
 .grid-3 {
     grid-template-columns: 1fr 1fr 1fr;
-
 }
 
+
 /* Margin */
+
 .my-1 {
     margin: 1rem 0;
 }
@@ -148,7 +161,9 @@
     margin: 4rem;
 }
 
+
 /* Padding */
+
 .py-1 {
     padding: 1rem 0;
 }
